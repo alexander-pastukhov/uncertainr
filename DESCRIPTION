@@ -24,3 +24,5 @@ Config/testthat/edition: 3
 VignetteBuilder: knitr
 URL: https://github.com/alexander-pastukhov/uncertainr, https://alexander-pastukhov.github.io/uncertainr/
 BugReports: https://github.com/alexander-pastukhov/uncertainr/issues
+Depends: 
+    R (>= 3.5)

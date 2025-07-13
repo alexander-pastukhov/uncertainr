@@ -1,0 +1,30 @@
+---
+title: "Percentile intervals"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Percentile intervals}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(uncertainr)
+```
+
+Basic usage
+```{r}
+standard_normal <- rnorm(100)
+c(lower_pi(standard_normal), upper_pi(standard_normal))
+```
+
+Custom interval
+```{r}
+lower_pi(standard_normal, 0.89)
+```

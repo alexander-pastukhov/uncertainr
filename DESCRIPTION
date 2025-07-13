@@ -1,0 +1,24 @@
+Package: uncertainr
+Type: Package
+Title: Collection of Functions To Characterize Uncertainty
+Version: 0.1.0
+Date: 2025-07-12
+Authors@R:
+  person(given = "Alexander",
+         family = "Pastukhov",
+         role = c("aut", "cre"),
+         email ="pastukhov.alexander@gmail.com",
+         comment = c(ORCID = "0000-0002-8738-8591"))
+Description: Collection of functions to characterize uncertainty.
+    Includes functions to compute percentile intervals for an emperical
+    distribution.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr

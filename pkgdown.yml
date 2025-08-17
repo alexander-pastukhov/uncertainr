@@ -4,7 +4,7 @@ pkgdown_sha: ~
 articles:
   percentile-intervals: percentile-intervals.html
   walkthrough: walkthrough.html
-last_built: 2025-08-17T14:17Z
+last_built: 2025-08-17T15:00Z
 urls:
   reference: https://alexander-pastukhov.github.io/uncertainr/reference
   article: https://alexander-pastukhov.github.io/uncertainr/articles

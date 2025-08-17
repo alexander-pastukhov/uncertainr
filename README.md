@@ -1,5 +1,5 @@
 # uncertainr
-<a href="https://alexander-pastukhov.github.io/uncertainr/"><img align="right" src="https://raw.githubusercontent.com/alexander-pastukhov/eyelinkReader/refs/heads/master/man/figures/logo.svg" alt="Logo" height="138" style="float:right; height:138px;"/></a>
+<a href="https://alexander-pastukhov.github.io/uncertainr/"><img align="right" src="https://raw.githubusercontent.com/alexander-pastukhov/uncertainr/refs/heads/master/man/figures/logo.svg" alt="Logo" height="138" style="float:right; height:138px;"/></a>
 
 Collection of Functions To Characterize Uncertainty
 

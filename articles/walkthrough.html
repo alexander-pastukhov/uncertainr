@@ -63,7 +63,7 @@
       <img src="../logo.svg" class="logo" alt=""><h1>Walkthrough</h1>
             
       
-      <small class="dont-index">Source: <a href="https://github.com/alexander-pastukhov/uncertainr/blob/master/vignettes/walkthrough.Rmd" class="external-link"><code>vignettes/walkthrough.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/alexander-pastukhov/uncertainr/blob/HEAD/vignettes/walkthrough.Rmd" class="external-link"><code>vignettes/walkthrough.Rmd</code></a></small>
       <div class="d-none name"><code>walkthrough.Rmd</code></div>
     </div>
 
@@ -168,7 +168,7 @@ package on CRAN, you will need a public Github repository.</p>
 <p>First, commit all files (I typically use “Blank project” or “Initial
 commit” as a comment). Then type</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">usethis</span><span class="fu">::</span><span class="fu">use_github</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">usethis</span><span class="fu">::</span><span class="fu"><a href="https://usethis.r-lib.org/reference/use_github.html" class="external-link">use_github</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <p>This will create a default branch for committed files (name
 <em>main</em> by default), initialize the remote, add Github support to
 the <strong>DESCRIPTION</strong> file, and push your files to the
@@ -176,10 +176,10 @@ remote.</p>
 <p>Please note that to use Github you need to setup a github token
 first. For this, call</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">usethis</span><span class="fu">::</span><span class="fu">create_github_token</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">usethis</span><span class="fu">::</span><span class="fu"><a href="https://usethis.r-lib.org/reference/github-token.html" class="external-link">create_github_token</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <p>and follow prompt. Next, register your token with git via</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">gitcreds</span><span class="fu">::</span><span class="fu">gitcreds_set</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">gitcreds</span><span class="fu">::</span><span class="fu"><a href="https://gitcreds.r-lib.org/reference/gitcreds_get.html" class="external-link">gitcreds_set</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <p>Note that you’ll need to paste your token in the prompt.</p>
 </div>
 <div class="section level2">
@@ -236,7 +236,7 @@ author, so the entry looks as follows:</p>
 </h2>
 <p>Simply run</p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">roxygen2</span><span class="fu">::</span><span class="fu">roxygenise</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">roxygen2</span><span class="fu">::</span><span class="fu"><a href="https://roxygen2.r-lib.org/reference/roxygenize.html" class="external-link">roxygenise</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <p>in the console. This will add <code>“RoxygenNote: 7.3.2”</code> to
 <strong>DESCRIPTION</strong> file (or whatever versoin of roxygen2 you
 have). Plus, it will (re)create <strong>NAMESPACE</strong> file with a
@@ -310,7 +310,7 @@ another example with a non-default CI, e.g.,
 <code>lower_pi(rnorm(100), CI = 0.89)</code>.</p>
 <p>Once you are done with the docstring, you need to run</p>
 <div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">roxygen2</span><span class="fu">::</span><span class="fu">roxygenise</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">roxygen2</span><span class="fu">::</span><span class="fu"><a href="https://roxygen2.r-lib.org/reference/roxygenize.html" class="external-link">roxygenise</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <p>in the console. This will update the <strong>NAMESPACE</strong> file
 adding import of <code>quantile</code> and export of
 <code>lower_pi</code> functions. It will also generated a documentation
@@ -355,7 +355,7 @@ Exited with status 1.</code></pre>
 you need to explicitly run it every time you update your
 documentation.</p>
 <div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">roxygen2</span><span class="fu">::</span><span class="fu">roxygenise</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">roxygen2</span><span class="fu">::</span><span class="fu"><a href="https://roxygen2.r-lib.org/reference/roxygenize.html" class="external-link">roxygenise</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="tests">Tests<a class="anchor" aria-label="anchor" href="#tests"></a>
@@ -390,11 +390,11 @@ any time you modify the function and check the package (check also runs
 all the tests).</p>
 <p>First, we need to create scaffolding for the tests via</p>
 <div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">usethis</span><span class="fu">::</span><span class="fu">use_testthat</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">usethis</span><span class="fu">::</span><span class="fu"><a href="https://usethis.r-lib.org/reference/use_testthat.html" class="external-link">use_testthat</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <p>Now run the following line to create a test file called
 <strong>tests/testthat/test-pi.R</strong></p>
 <div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">usethis</span><span class="fu">::</span><span class="fu">use_test</span><span class="op">(</span><span class="st">"pi"</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">usethis</span><span class="fu">::</span><span class="fu"><a href="https://usethis.r-lib.org/reference/use_r.html" class="external-link">use_test</a></span><span class="op">(</span><span class="st">"pi"</span><span class="op">)</span></span></code></pre></div>
 <p>Note that the file itself contains a generic test that has nothing to
 do with your own code, so we need to replace it. Here is my first test.
 I have change the name to match the functionality of our function and
@@ -406,7 +406,7 @@ expectations: lower limit for 0.9 interval for values from 0 to 20 is
 <span>    <span class="fu">expect_equal</span><span class="op">(</span><span class="fu"><a href="../reference/lower_pi.html">lower_pi</a></span><span class="op">(</span><span class="fl">0</span><span class="op">:</span><span class="fl">20</span>, CI<span class="op">=</span><span class="fl">0.9</span><span class="op">)</span>, <span class="fl">1</span><span class="op">)</span></span>
 <span><span class="op">}</span><span class="op">)</span></span></code></pre></div>
 <p>Run the test via <em>Test</em> button in the <em>Build</em> tab (or
-press Ctrl+Shift+T on Windows) which runs <code>devtools::test()</code>
+press Ctrl+Shift+T on Windows) which runs <code><a href="https://devtools.r-lib.org/reference/test.html" class="external-link">devtools::test()</a></code>
 and you will see the results. Modify either the value for
 <code>CI</code> parameter or the expected value, re-run the test and you
 will see it fail. In real life scenario this would immediately alert you
@@ -485,7 +485,7 @@ values.</p>
 <p>Now that the data frame is in the global environment, we can turn it
 into example data set via</p>
 <div class="sourceCode" id="cb22"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">usethis</span><span class="fu">::</span><span class="fu">use_data</span><span class="op">(</span><span class="va">standard_normal</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">usethis</span><span class="fu">::</span><span class="fu"><a href="https://usethis.r-lib.org/reference/use_data.html" class="external-link">use_data</a></span><span class="op">(</span><span class="va">standard_normal</span><span class="op">)</span></span></code></pre></div>
 <p>This creates a folder <strong>data</strong> and saves the table into
 <strong>standard_normal.rda</strong>. Now you can load it via
 <code>data(standard_normal)</code>.</p>
@@ -578,7 +578,7 @@ lower_pi(rnorm(100))
 articles that explain certain functionality or concepts behind the
 computation at length and in depth. To create a vignette run</p>
 <div class="sourceCode" id="cb27"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">usethis</span><span class="fu">::</span><span class="fu">use_vignette</span><span class="op">(</span><span class="st">"percentile-intervals"</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">usethis</span><span class="fu">::</span><span class="fu"><a href="https://usethis.r-lib.org/reference/use_vignette.html" class="external-link">use_vignette</a></span><span class="op">(</span><span class="st">"percentile-intervals"</span><span class="op">)</span></span></code></pre></div>
 <p>This will create a file <strong>percentile-intervals.Rmd</strong> in
 <strong>vignettes</strong> folder, which you edit and knit directly.
 Here is a simple vignette that I have created. This is way to short to
@@ -622,7 +622,7 @@ can do via <em>Clean and Install</em> button in the <em>Build</em> tab),
 by default, the vignettes are not included. Hence, you need to
 explicitly whish for them:</p>
 <div class="sourceCode" id="cb29"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install</span><span class="op">(</span>build_vignettes <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org/reference/install.html" class="external-link">install</a></span><span class="op">(</span>build_vignettes <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="creating-public-documentation">Creating Public Documentation<a class="anchor" aria-label="anchor" href="#creating-public-documentation"></a>
@@ -635,7 +635,7 @@ documentation for all functions into a reference page. Here is the link
 to the documentation for this package: <a href="https://alexander-pastukhov.github.io/uncertainr/">alexander-pastukhov.github.io/uncertainr</a>.</p>
 <p>To set it up, call</p>
 <div class="sourceCode" id="cb30"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">usethis</span><span class="fu">::</span><span class="fu">use_pkgdown_github_pages</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">usethis</span><span class="fu">::</span><span class="fu"><a href="https://usethis.r-lib.org/reference/use_pkgdown.html" class="external-link">use_pkgdown_github_pages</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <p>This will create configuration, creating branch gh-pages and
 associated workflows. Once you update your documentation locally, you
 can update it at gitpages via</p>

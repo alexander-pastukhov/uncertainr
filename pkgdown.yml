@@ -1,10 +1,10 @@
-pandoc: 3.1.11
+pandoc: '3.4'
 pkgdown: 2.1.3
 pkgdown_sha: ~
 articles:
   percentile-intervals: percentile-intervals.html
   walkthrough: walkthrough.html
-last_built: 2025-08-17T15:08Z
+last_built: 2025-08-24T12:18Z
 urls:
   reference: https://alexander-pastukhov.github.io/uncertainr/reference
   article: https://alexander-pastukhov.github.io/uncertainr/articles
